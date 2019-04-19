@@ -1,0 +1,60 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">SURVEY FORM</h1>
+  <div id="survey-box">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form" action="index.html" method="post">
+
+      <label id="name-label" for="name"><sup>* </sup>Name:</label>
+      <input class="input" id="name" type="text" name="fullname" placeholder="Enter your name" required>
+
+      <label id="email-label" for="email"><sup>* </sup>Email:</label>
+      <input class="input" id="email" type="email" name="email-adress" placeholder="Enter your email-adress" required>
+
+      <label id="number-label" for="number"><sup>* </sup>Age:</label>
+      <input class="input" id="number" type="number" name="age" min="1" max="100" placeholder="Enter your age" required>
+
+      <div><label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+        <select class="input" id="dropdown">
+          <option value="student" selected>Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="notsay">Prefer Not To Say</option>
+        </select></div>
+
+      <div><label id="recommendation-label" for="recommendation"><sup>* </sup>How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <ul>
+          <li><input type="radio" name="recommendation" value="yes"> Definitely</li>
+          <li><input type="radio" name="recommendation" value="maybe"> Maybe</li>
+          <li><input type="radio" name="recommendation" value="no"> Not Sure</li>
+        </ul>
+      </div>
+
+      <div><label id="improvement-label" for="improvement"><sup>* </sup>Things that should be improved in the future (Check all that apply):</label>
+        <ul>
+          <li><input type="checkbox" name="improvement" value="frontend"> Front-end Projects</li>
+          <li><input type="checkbox" name="improvement" value="backend"> Back-end Projects</li>
+          <li><input type="checkbox" name="improvement" value="challenges"> Challenges</li>
+        </ul>
+      </div>
+
+      <div><label id="comments-label" for="comments">Any Comments or Suggestions?</label>
+        <textarea class="input" name="name" placeholder="Enter your comment here..."></textarea></div>
+
+      <input id="submit" type="submit">
+
+    </form>
+  </div>
+</body>
+
+</html>
